@@ -42,6 +42,8 @@ public class GuessingGame extends JFrame {
 	}
 	
 	public GuessingGame() {
+		
+		setLocationRelativeTo(null);
 			
 		getContentPane().setBackground(UIManager.getColor("OptionPane.background"));
 		setBackground(new Color(240, 240, 240));
@@ -69,6 +71,7 @@ public class GuessingGame extends JFrame {
 		txtGuess.setColumns(10);
 		
 		JButton btnGuess = new JButton("\u0423\u0433\u0430\u0434\u0430\u0442\u044C!");
+		btnGuess.setFocusable(false);
 		btnGuess.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				checkGuess();
