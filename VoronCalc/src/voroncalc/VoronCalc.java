@@ -32,6 +32,7 @@ public class VoronCalc extends JFrame {
 		setLocationRelativeTo(null);
 		/* Подготавливаем компоненты объекта */
 		countLabel = new JLabel("Вороны:" + voron);
+		countLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		addCrow = new JButton("Добавить ворону");
 		addCrow.setFocusPainted(false);
 		removeCrow = new JButton("Удалить ворону");
@@ -39,10 +40,10 @@ public class VoronCalc extends JFrame {
 		/* Подготавливаем временные компоненты */
 		JPanel buttonsPanel = new JPanel(new FlowLayout());
 		/* Расставляем компоненты по местам */
-		add(countLabel, BorderLayout.NORTH); /* О размещении компонент поговорим позже */
+		getContentPane().add(countLabel, BorderLayout.CENTER); /* О размещении компонент поговорим позже */
 		buttonsPanel.add(addCrow);
 		buttonsPanel.add(removeCrow);
-		add(buttonsPanel, BorderLayout.SOUTH);
+		getContentPane().add(buttonsPanel, BorderLayout.SOUTH);
 		initListeners();
 	}
 
@@ -81,8 +82,9 @@ public class VoronCalc extends JFrame {
 		}
 
 		VoronCalc app = new VoronCalc();
+		app.setSize(400, 300);
 		app.setVisible(true);
-		app.pack(); /* Эта команда подбирает оптимальный размер в зависимости от содержимого окна */
+		//app.pack(); /* Эта команда подбирает оптимальный размер в зависимости от содержимого окна */
 	}
 
 }
