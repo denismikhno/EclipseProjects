@@ -13,6 +13,7 @@ package voroncalc;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -31,6 +32,7 @@ public class VoronCalc extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		// Здесь setLocationRelativeTo не будет выводить окно посередине
 		//setLocationRelativeTo(null);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(".\\voron.png"));
 		/* Подготавливаем компоненты объекта */
 		countLabel = new JLabel("Вороны:" + voron);
 		countLabel.setHorizontalAlignment(SwingConstants.CENTER);
