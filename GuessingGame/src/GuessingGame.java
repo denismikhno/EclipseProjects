@@ -61,12 +61,12 @@ public class GuessingGame extends JFrame {
 		JLabel lblGuess = new JLabel("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0447\u0438\u0441\u043B\u043E \u043E\u0442 0 \u0434\u043E 100:");
 		lblGuess.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblGuess.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblGuess.setBounds(87, 96, 178, 24);
+		lblGuess.setBounds(82, 96, 196, 24);
 		getContentPane().add(lblGuess);
 		
 		txtGuess = new JTextField();
 		txtGuess.setHorizontalAlignment(SwingConstants.CENTER);
-		txtGuess.setBounds(275, 99, 62, 20);
+		txtGuess.setBounds(287, 99, 62, 20);
 		getContentPane().add(txtGuess);
 		txtGuess.setColumns(10);
 		
