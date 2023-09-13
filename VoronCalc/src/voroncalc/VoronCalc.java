@@ -29,7 +29,8 @@ public class VoronCalc extends JFrame {
 	public VoronCalc() {
 		super("Калькулятор ворон");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setLocationRelativeTo(null);
+		// Здесь setLocationRelativeTo не будет выводить окно посередине
+		//setLocationRelativeTo(null);
 		/* Подготавливаем компоненты объекта */
 		countLabel = new JLabel("Вороны:" + voron);
 		countLabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -83,6 +84,8 @@ public class VoronCalc extends JFrame {
 
 		VoronCalc app = new VoronCalc();
 		app.setSize(400, 300);
+		// Здесь setLocationRelativeTo будет выводить окно посередине!!!
+		app.setLocationRelativeTo(null);
 		app.setVisible(true);
 		//app.pack(); /* Эта команда подбирает оптимальный размер в зависимости от содержимого окна */
 	}
