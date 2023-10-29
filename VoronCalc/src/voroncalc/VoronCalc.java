@@ -1,16 +1,5 @@
 package voroncalc;
 
-/************************************************************
- ** Title:  Первое окно 
- ** Class:  VoronCalc
- ** Author: Oleg Imanilov
- **   Copyright (c) 2007 Oleg Imanilov.
- **   Permission is granted to copy, distribute and/or
- **   modify  this  document under  the  terms  of the
- **   GNU Free Documentation License
- ** Notes: Главный класс программы VoronCalc
- ************************************************************/
-
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.Toolkit;
